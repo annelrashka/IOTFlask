@@ -31,7 +31,7 @@ def callback():
 @handler.add(MessageEvent, message=TextMessage)
 def handle_message(event):
     user_message = event.message.text
-    reply_message = f"You said: {user_message}"
+    reply_message = f"Kamu ngirim chat ini: {user_message}"
 
     line_bot_api.reply_message(
         event.reply_token,
